@@ -29,12 +29,21 @@ public class MainActivity extends AppCompatActivity {
         json.setName("Json");
         json.setPhoneNumber("0877744");
 
+        //Get one Contact
+        Contact c = db.getContact(1);
+       c.setName("NewJeremy");
+       c.setPhoneNumber("111111");
+
+       int updatedRow = db.updateContact(c);
+
+        Log.d("Row", "onCreate: "+updatedRow);
+
         //db.addContact(json);
 
         List<Contact> contactList = db.getAllContacts();
 
         for (Contact contact:contactList){
-            Log.d("MainActivity", "onCreate: "+contact.getId());
+            Log.d("MainActivity", "onCreate: "+contact.getName());
         }
     }
 }
