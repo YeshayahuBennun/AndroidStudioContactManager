@@ -18,16 +18,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         DatabaseHandler db = new DatabaseHandler(MainActivity.this);
 
+        Log.d("Count", "onCreate: "+db.getCount());
+
         //Create a Contact
 //        Contact jeremy = new Contact();
 //
 //        jeremy.setName("Jeremy");
 //        jeremy.setPhoneNumber("985747374");
 //
-        Contact yesh = new Contact();
-
-        yesh.setName("Yeshayhu");
-        yesh.setPhoneNumber("7777777");
+//        Contact yesh = new Contact();
+//
+//        yesh.setName("Yeshayhu");
+//        yesh.setPhoneNumber("7777777");
 
         //db.addContact(yesh);
 
