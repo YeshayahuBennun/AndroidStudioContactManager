@@ -14,6 +14,11 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
+    public Contact(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber=phoneNumber;
+    }
+
     public int getId() {
         return id;
     }
